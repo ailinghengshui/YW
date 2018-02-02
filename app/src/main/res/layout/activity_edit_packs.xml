@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_little_grey"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_little_grey"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/standard_white">
+
+                <TextView
+                    style="@style/left_text"
+                    android:text="销售状态" />
+
+                <com.hzjytech.operation.widgets.switchbutton.SwitchButton
+                    android:id="@+id/sb_pack_sale_statu"
+                    style="@style/switch_button"
+                    app:kswAnimationDuration="300"
+                    app:kswBackDrawable="@drawable/ios_back_drawable"
+                    app:kswBackMeasureRatio="1.4"
+                    app:kswThumbDrawable="@drawable/thumb_switch_button" />
+
+                <TextView
+                    android:id="@+id/tv_pack_sale_statu"
+                    style="@style/right_text"
+                    android:text="是" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_pack_change_drink_pic"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/standard_white"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/left_text"
+                    android:text="饮品图片" />
+
+                <ImageView
+                    android:id="@+id/iv_pack_drink_item"
+                    android:layout_width="54dp"
+                    android:layout_height="54dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="22dp"
+                    android:src="@drawable/icon_picture" />
+
+                <ImageView
+                    android:id="@+id/iv_pack_pic_drink_right"
+                    style="@style/right_image"
+                    android:src="@drawable/icon_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_pack_chinese_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/standard_white">
+
+                <TextView
+                    style="@style/left_text"
+                    android:layout_centerVertical="true"
+                    android:text="中文名" />
+
+                <TextView
+                    android:id="@+id/tv_pack_chinese_name"
+                    style="@style/right_text"
+                    android:layout_centerVertical="true"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/iv_pack_chinese_name"
+                    style="@style/right_image"
+                    android:src="@drawable/icon_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_pack_english_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/standard_white">
+
+                <TextView
+                    style="@style/left_text"
+                    android:layout_centerVertical="true"
+                    android:text="英文名" />
+
+                <TextView
+                    android:id="@+id/tv_pack_english_name"
+                    style="@style/right_text"
+                    android:layout_centerVertical="true"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/iv_pack_english_name"
+                    style="@style/right_image"
+                    android:src="@drawable/icon_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_pack_now_price"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/standard_white">
+
+                <TextView
+                    style="@style/left_text"
+                    android:layout_centerVertical="true"
+                    android:text="现价" />
+
+                <TextView
+                    android:id="@+id/tv_pack_now_price"
+                    style="@style/right_text"
+                    android:layout_centerVertical="true"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/iv_pack_now_price"
+                    style="@style/right_image"
+                    android:src="@drawable/icon_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_pack_weixin_price"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/standard_white">
+
+                <TextView
+                    style="@style/left_text"
+                    android:layout_centerVertical="true"
+                    android:text="微信支付价" />
+
+                <TextView
+                    android:id="@+id/tv_pack_weixin_price"
+                    style="@style/right_text"
+                    android:layout_centerVertical="true"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/iv_pack_weixin_price"
+                    style="@style/right_image"
+                    android:src="@drawable/icon_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_pack_ali_price"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/standard_white">
+
+                <TextView
+                    style="@style/left_text"
+                    android:layout_centerVertical="true"
+                    android:text="支付宝价" />
+
+                <TextView
+                    android:id="@+id/tv_pack_ali_price"
+                    style="@style/right_text"
+                    android:layout_centerVertical="true"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/iv_pack_ali_price"
+                    style="@style/right_image"
+                    android:src="@drawable/icon_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+            <RelativeLayout
+                android:id="@+id/rl_pack_open_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/standard_white">
+
+                <TextView
+                    style="@style/left_text"
+                    android:layout_centerVertical="true"
+                    android:text="开始时间" />
+
+                <TextView
+                    android:id="@+id/tv_pack_open_time"
+                    style="@style/right_text"
+                    android:layout_centerVertical="true"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/iv_pack_open_time"
+                    style="@style/right_image"
+                    android:src="@drawable/icon_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+            <RelativeLayout
+                android:id="@+id/rl_pack_close_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/standard_white">
+
+                <TextView
+                    style="@style/left_text"
+                    android:layout_centerVertical="true"
+                    android:text="结束时间" />
+
+                <TextView
+                    android:id="@+id/tv_pack_close_time"
+                    style="@style/right_text"
+                    android:layout_centerVertical="true"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/iv_pack_close_time"
+                    style="@style/right_image"
+                    android:src="@drawable/icon_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_pack_item_first"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/standard_white">
+
+                <TextView
+                    android:hint="选择单品"
+                    android:id="@+id/tv_pack_first"
+                    style="@style/left_text"
+                    android:layout_centerVertical="true" />
+
+                <ImageView
+                    android:id="@+id/iv_pack_item_first"
+                    style="@style/right_image"
+                    android:src="@drawable/icon_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_pack_item_second"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/standard_white">
+
+                <TextView
+                    android:hint="选择单品"
+                    android:id="@+id/tv_pack_second"
+                    style="@style/left_text"
+                    android:layout_centerVertical="true" />
+
+
+                <ImageView
+                    android:id="@+id/iv_pack_item_second"
+                    style="@style/right_image"
+                    android:src="@drawable/icon_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_pack_item_third"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/standard_white">
+
+                <TextView
+                    android:hint="选择单品"
+                    android:id="@+id/tv_pack_third"
+                    style="@style/left_text"
+                    android:layout_centerVertical="true" />
+
+
+                <ImageView
+                    android:id="@+id/iv_pack_item_third"
+                    style="@style/right_image"
+                    android:src="@drawable/icon_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_pack_item_four"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/standard_white">
+
+                <TextView
+                    android:hint="选择单品"
+                    android:id="@+id/tv_pack_four"
+                    style="@style/left_text"
+                    android:layout_centerVertical="true"
+                    android:text="" />
+
+
+                <ImageView
+                    android:id="@+id/iv_pack_item_four"
+                    style="@style/right_image"
+                    android:src="@drawable/icon_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:id="@+id/rl_pack_item_five"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/standard_white">
+
+                <TextView
+                    android:hint="选择单品"
+                    android:id="@+id/tv_pack_five"
+                    style="@style/left_text"
+                    android:layout_centerVertical="true" />
+
+                <ImageView
+                    android:id="@+id/iv_pack_item_five"
+                    style="@style/right_image"
+                    android:src="@drawable/icon_right" />
+            </RelativeLayout>
+
+            <include layout="@layout/line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <Button
+                    android:id="@+id/btnPackDelete"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/color_red"
+                    android:text="删除配方"
+                    android:textColor="@color/white"
+                    android:textSize="17dp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

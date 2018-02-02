@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_little_grey"
+    android:orientation="vertical">
+    <include layout="@layout/titlebar" />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_little_grey"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:text="销售状态" />
+
+        <com.hzjytech.operation.widgets.switchbutton.SwitchButton
+            android:id="@+id/sb_sale_statu"
+            style="@style/switch_button"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswBackMeasureRatio="1.4"
+            app:kswThumbDrawable="@drawable/thumb_switch_button" />
+
+        <TextView
+            android:id="@+id/tv_sale_statu"
+            style="@style/right_text"
+            android:text="是" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_change_drink_pic"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/standard_white"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/left_text"
+            android:text="饮品图片" />
+
+        <ImageView
+            android:id="@+id/iv_drink_item"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="22dp"
+            android:src="@drawable/icon_picture" />
+
+        <ImageView
+            android:id="@+id/iv_pic_drink_right"
+            style="@style/right_image"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chinese_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_centerVertical="true"
+            android:text="中文名" />
+
+        <TextView
+            android:id="@+id/tv_chinese_name"
+            style="@style/right_text"
+            android:layout_centerVertical="true"
+            android:text="意式浓缩" />
+
+        <ImageView
+            android:id="@+id/iv_chinese_name"
+            style="@style/right_image"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_english_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_centerVertical="true"
+            android:text="英文名" />
+
+        <TextView
+            android:id="@+id/tv_english_name"
+            style="@style/right_text"
+            android:layout_centerVertical="true"
+            android:text="Espresso" />
+
+        <ImageView
+            android:id="@+id/iv_english_name"
+            style="@style/right_image"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+    <include layout="@layout/line" />
+ <RelativeLayout
+        android:id="@+id/rl_recipe"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_centerVertical="true"
+            android:text="配方种类" />
+
+        <TextView
+            android:id="@+id/tv_recipe_name"
+            style="@style/right_text"
+            android:layout_centerVertical="true"
+            android:text="Espresso" />
+
+        <ImageView
+            android:id="@+id/iv_recipe_name"
+            style="@style/right_image"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_volume"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_centerVertical="true"
+            android:text="体积" />
+
+        <TextView
+            android:id="@+id/tv_volume"
+            style="@style/right_text"
+            android:layout_centerVertical="true"
+            android:text="240ml" />
+
+        <ImageView
+            android:id="@+id/iv_volume"
+            style="@style/right_image"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_origin_price"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_centerVertical="true"
+            android:text="原价" />
+
+        <TextView
+            android:id="@+id/tv_origin_price"
+            style="@style/right_text"
+            android:layout_centerVertical="true"
+            android:text="240ml" />
+
+        <ImageView
+            android:id="@+id/iv_origin_price"
+            style="@style/right_image"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_now_price"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_centerVertical="true"
+            android:text="现价" />
+
+        <TextView
+            android:id="@+id/tv_now_price"
+            style="@style/right_text"
+            android:layout_centerVertical="true"
+            android:text="240ml" />
+
+        <ImageView
+            android:id="@+id/iv_now_price"
+            style="@style/right_image"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_weixin_price"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_centerVertical="true"
+            android:text="微信支付价" />
+
+        <TextView
+            android:id="@+id/tv_weixin_price"
+            style="@style/right_text"
+            android:layout_centerVertical="true"
+            android:text="240ml" />
+
+        <ImageView
+            android:id="@+id/iv_weixin_price"
+            style="@style/right_image"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_ali_price"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_centerVertical="true"
+            android:text="支付宝价" />
+
+        <TextView
+            android:id="@+id/tv_ali_price"
+            style="@style/right_text"
+            android:layout_centerVertical="true"
+            android:text="240ml" />
+
+        <ImageView
+            android:id="@+id/iv_ali_price"
+            style="@style/right_image"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_set_ads"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_centerVertical="true"
+            android:text="广告配置" />
+
+        <TextView
+            android:id="@+id/tv_set_ads"
+            android:maxLines="1"
+            android:gravity="end"
+            android:layout_width="200dp"
+            android:ellipsize="end"
+            style="@style/right_text"
+            android:layout_centerVertical="true"
+            android:text="240ml" />
+
+        <ImageView
+            android:id="@+id/iv_set_ads"
+            style="@style/right_image"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:text="Hot" />
+
+        <com.hzjytech.operation.widgets.switchbutton.SwitchButton
+            android:id="@+id/sb_hot"
+            style="@style/switch_button"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswBackMeasureRatio="1.4"
+            app:kswThumbDrawable="@drawable/thumb_switch_button" />
+
+        <TextView
+            android:id="@+id/tv_hot"
+            style="@style/right_text"
+            android:text="是" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:text="New" />
+
+        <com.hzjytech.operation.widgets.switchbutton.SwitchButton
+            android:id="@+id/sb_new"
+            style="@style/switch_button"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswBackMeasureRatio="1.4"
+            app:kswThumbDrawable="@drawable/thumb_switch_button" />
+
+        <TextView
+            android:id="@+id/tv_new"
+            style="@style/right_text"
+            android:text="是" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:text="Iced" />
+
+        <com.hzjytech.operation.widgets.switchbutton.SwitchButton
+            android:id="@+id/sb_iced"
+            style="@style/switch_button"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswBackMeasureRatio="1.4"
+            app:kswThumbDrawable="@drawable/thumb_switch_button" />
+
+        <TextView
+            android:id="@+id/tv_iced"
+            style="@style/right_text"
+            android:text="是" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:text="Sweet" />
+
+        <com.hzjytech.operation.widgets.switchbutton.SwitchButton
+            android:id="@+id/sb_sweet"
+            style="@style/switch_button"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswBackMeasureRatio="1.4"
+            app:kswThumbDrawable="@drawable/thumb_switch_button" />
+
+        <TextView
+            android:id="@+id/tv_sweet"
+            style="@style/right_text"
+            android:text="是" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/color_red"
+            android:text="删除配方"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+    </RelativeLayout>
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

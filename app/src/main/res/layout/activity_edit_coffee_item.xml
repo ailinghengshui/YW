@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_little_grey"
+    android:layout_height="match_parent">
+ <include layout="@layout/titlebar"/>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/rl_cofffee_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_centerVertical="true"
+            android:text="选择单品" />
+
+        <TextView
+            android:id="@+id/tv_coffee_item_name"
+            style="@style/right_text"
+            android:layout_centerVertical="true"
+            android:text="" />
+
+        <ImageView
+            style="@style/right_image"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/rl_cofffee_item_count"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_centerVertical="true"
+            android:text="选择数量" />
+
+        <TextView
+            android:id="@+id/tv_coffee_item_count"
+            style="@style/right_text"
+            android:layout_centerVertical="true"
+            android:text="" />
+
+        <ImageView
+            style="@style/right_image"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+
+</LinearLayout>
